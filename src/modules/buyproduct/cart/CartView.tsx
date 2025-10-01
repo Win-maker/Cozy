@@ -35,7 +35,7 @@ const CartView = () => {
 
   return (
     <div className="w-full min-h-screen p-4 md:py-10 flex flex-col md:flex-row justify-center items-start">
-      <div className="w-full md:w-[50%] lg:w-[55%] flex flex-col space-y-10 mb-6">
+      <div className="w-full md:w-[50%] lg:w-[55%] flex flex-col space-y-10 mb-6 pl-0 lg:pl-12">
         <div className="flex flex-row space-x-4 items-baseline mb-6 md:mb-10">
           <h1 className="font-bold font-third text-[32px]">Cart</h1>
           <p className="text-[20px] text-[rgba(162,163,177,1)] font-semibold">
@@ -128,7 +128,7 @@ const CartView = () => {
         )}
       </div>
 
-      <div className="w-full md:w-[50%] lg:w-[45%] flex sm:justify-center sm:items-start md:justify-end lg:justify-center px-0 md:px-4 mt-6 md:mt-0">
+       <div className="w-full h-[60%]  lg:w-[45%] flex sm:justify-center sm:items-start md:justify-center lg:justify-end px-0 md:px-4 mt-6 md:mt-0">
         <OrderSummaryCard />
       </div>
     </div>
