@@ -78,8 +78,8 @@ useEffect(() => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-6 max-w-6xl mx-auto p-6">
-      <div className="w-full lg:w-[55%] font-secondary">
+    <div className="flex flex-col lg:flex-row lg:justify-between p-6">
+      <div className="w-full lg:w-[55%] font-secondary lg:ml-15">
         <Form {...form}>
           <h1 className="font-bold text-2xl font-secondary mb-6">
             Personal Information
@@ -264,7 +264,7 @@ useEffect(() => {
         </Form>
       </div>
 
-      <div className="w-full h-[60%]  lg:w-[45%] flex sm:justify-center sm:items-start md:justify-center lg:justify-end px-0 md:px-4 mt-6 md:mt-0">
+      <div className="w-full h-[60%]  lg:w-[45%] flex sm:justify-center sm:items-start md:justify-center lg:justify-end px-0 md:px-4 mt-6 md:mt-0 ">
         <OrderSummaryCard  onCheckout={handleCheckout} isFormValid={isFormValid} />
       </div>
     </div>

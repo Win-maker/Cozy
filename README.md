@@ -1,6 +1,6 @@
 # Cozy E-Commerce App
 
-This is a simple e-commerce application built with React, Typescript, Shadcn and Tailwind CSS. It features a smooth purchasing process, responsive design, and optimizations like lazy loading for better performance.
+This is a simple e-commerce application built with React, Typescript, Shadcn, Redux and Tailwind CSS. It features a smooth purchasing process, responsive design, and optimizations like lazy loading for better performance.
 
 ---
 
@@ -22,3 +22,7 @@ Make sure you have [pnpm](https://pnpm.io/) installed. Then run:
 
 ```bash
 pnpm install
+
+
+
+
