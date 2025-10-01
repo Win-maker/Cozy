@@ -18,7 +18,6 @@ const CartView = () => {
   const cartItems = useAppSelector(selectCartItems);
   const navigate = useNavigate();
 
-
   const handleIncrease = (id: string) => {
     const item = cartItems.find((i) => i.id === id);
     if (item) dispatch(increaseQty(id));
@@ -119,21 +118,18 @@ const CartView = () => {
         )}
 
         {cartItems.length > 0 && (
-<div
-  className="flex space-x-3 items-center text-[rgba(23,24,59,1)] w-full md:w-fit p-3 py-4 rounded-sm border bg-[rgba(242,242,247,1)] border-[rgba(58,163,159,1)]"
->
-  <img src={percent} alt="percent" className="w-4 h-4" />
-  <span>
-    10% Instant Discount with Federal Bank Debit Cards on a min spend
-    of $150. TCA
-  </span>
-</div>
-
+          <div className="flex space-x-3 items-center text-[rgba(23,24,59,1)] w-full md:w-fit p-3 py-4 rounded-sm border bg-[rgba(242,242,247,1)] border-[rgba(58,163,159,1)]">
+            <img src={percent} alt="percent" className="w-4 h-4" />
+            <span>
+              10% Instant Discount with Federal Bank Debit Cards on a min spend
+              of $150. TCA
+            </span>
+          </div>
         )}
       </div>
 
       <div className="w-full md:w-[50%] lg:w-[45%] flex sm:justify-center sm:items-start md:justify-end lg:justify-center px-0 md:px-4 mt-6 md:mt-0">
-        <OrderSummaryCard/>
+        <OrderSummaryCard />
       </div>
     </div>
   );
